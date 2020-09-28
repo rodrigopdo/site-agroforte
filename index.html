@@ -4,19 +4,25 @@
     
     <meta charset="utf-8">
     
+    <title>AgroForte</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
     <link rel="stylesheet" href="style.css">
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
 
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-    <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
+<style>
 
-    <title>AgroForte</title>
+      
+   
+
+</style>
+
   </head>
   <body>
   
@@ -53,56 +59,54 @@
   </nav>
       <!--FIM DA NAVBAR-->
       
-      
+  <header id="topo">
+
   <div class="jumbotron bg-white">
     <div class="container"> 
       <div class="row">
-        <div class="col-lg-8">
-           
-          <h3 class="display-3 pt-5 mt-5 textPrimary "><strong>O parceiro digital do produtor rural</strong></h3>
-                      
-            <p class="lead mt-4">Aqui você encontra a solução de crédito perfeita para o seu negócio <br><strong>Ágil e 100% digital!</strong>
+        <div class="col-lg-6">
+
+            <h1>O parceiro digital do produtor rural</h1>
+            
+            <p class="mt-4">Aqui você encontra a solução de crédito perfeita para o seu negócio. Somos um serviço 100% digital que chegou ao campo para ajudar o produtor rural, sem burocracias.
             </p>
-                  
-            <a class="btn btn-success btn-lg mt-4 shadow-lg p-3 mb-5 rounded" href="#anchor" role="button">Estou interessado</a>
-                      
+            
+            <a class="btn btn-success btn-lg mt-4 shadow-lg p-3 mb-5 rounded" href="#produtos" role="button">Estou interessado</a>      
+
         </div>
 
-        <div class="d-none d-lg-block col-md-4 mt-5">
+        <div class=" imgHeader d-none d-lg-block col-md-6 mt-5 text-right">
            
-          <img src="img/ilust-jumbox.png" width="560" height="500" alt= "AgroForte">
+          <img src="img/ilust-jumbox.png" width="500" height="400" alt= "AgroForte">
                     
         </div>
 
       </div>  
     </div>
   </div>
+
+  </header>
       
   <!--INÍCIO HEADER FORMULÁRIO-->      
+  
   <div id="form"></div>
 
   <div class="azulPrimary text-light">
 
     <div class="container">
   
-      <h3 class="mb-4 mt-5 pt-5 text-success text-center"><i class="far fa-handshake"></i> Seja um Parceiro AgroForte!</h3>
+      <h3 class="mb-4 ptExtra text-success text-center"><i class="far fa-handshake"></i> Seja um Parceiro AgroForte!</h3>
 
-      <p class="mb-3 lead text-center">Envie-nos a sua proposta. Precisaremos apenas dos seus dados e o envio de alguns documentos</p>
-        
-       
-
-        
-                                    
+      <p class="mb-3 text-center">Envie-nos a sua proposta. Precisaremos apenas dos seus dados e o envio de alguns documentos</p>
+                                            
   <!--INÍCIO CADASTRO-->
   
       <div class="row mt-5">
         <h4 class="col-md-8 text-success"><i class="fa fa-info-circle"></i> Dados Básicos</h4>
-        <p class="col-md-4 text-right">*Campo Obrigatório </p>
-       
-        
+        <p class="col-md-4 text-right text-muted">*Campo Obrigatório </p>
+             
       </div>      
-        
-        
+          
       <form>
         
         <div class="form-row"> 
@@ -272,45 +276,96 @@
 
         <h4 class="mb-4 mt-5 text-success"><i data-feather="dollar-sign"></i> <i class="fas fa-hand-holding-usd"></i>  Simulação</h4>
       
-      <div class="form-row">
-        
-        <div class="form-group col-md-4">
-         
-            <label  for="inputValor">Valor Solicitado</label>
-            <select class="custom-select mr-sm-2" id="inputValor">
-              <option selected>Valor R$</option>
-              <option value="1">R$ 20.000</option>
-              <option value="2">R$ 50.000</option>
-              <option value="3">R$ 80.000</option>
-              <option value="4">R$ 100.000</option>
-              <option value="5">R$ 200.000</option>
-              <option value="6">R$ 300.000</option>
-            </select>
-
-        </div>
-
-        <div class="form-group col-md-4">
-         
-            <label  for="inputParcelas">Qtde. de Parcelas</label>
-            <select class="custom-select mr-sm-2" id="inputParcelas">
-              <option selected>Qtde. de Parcelas</option>
-              <option value="1">06</option>
-              <option value="2">12</option>
-              <option value="3">24</option>
-              <option value="4">26</option>
-              <option value="5">48</option>
-            </select>
-        </div>
-        <div class="form-group col-md-4">
+        <div class="form-row">
           
-            <label  for="inputVencimento">Vencimento da Parcelas</label>
-            <input class="form-control" type="text" id="calendario">
+          <div class="form-group col-md-4">
+          
+              <label  for="inputValor">Valor Solicitado</label>
+              <select class="custom-select mr-sm-2" id="inputValor">
+                <option selected>Valor R$</option>
+                <option value="1">R$ 20.000</option>
+                <option value="2">R$ 50.000</option>
+                <option value="3">R$ 80.000</option>
+                <option value="4">R$ 100.000</option>
+                <option value="5">R$ 200.000</option>
+                <option value="6">R$ 300.000</option>
+              </select>
+
+          </div>
+
+          <div class="form-group col-md-4">
+          
+              <label  for="inputParcelas">Qtde. de Parcelas</label>
+              <select class="custom-select mr-sm-2" id="inputParcelas">
+                <option selected>Qtde. de Parcelas</option>
+                <option value="1">06</option>
+                <option value="2">12</option>
+                <option value="3">24</option>
+                <option value="4">26</option>
+                <option value="5">48</option>
+              </select>
+          </div>
+          <div class="form-group col-md-4">
+            
+              <label  for="inputVencimento">Vencimento da Parcelas</label>
+              <input class="form-control" type="text" id="calendario">
+          </div>
+          
+        </div>
+
+          <h4 class="mb-4 mt-5 text-success"><i class="fas fa-file-upload"></i>  Envio de Documentos</h4>
+         
+          <p>Para agilizarmos o processo de contratação, abaixo você poderá carregar e enviar os arquivos com as imagens digitalizadas dos seguintes documentos:</p>
+         
+          <p class="mt-4"><small><i class="fas fa-check"></i> Documento de identidade (RG) ou CNH dentro do prazo de validade </small></p>
+         
+          <p class="mb-5"><small><i class="fas fa-check"></i> Comprorvante de residência recente (últimos 3 meses)</small></p>
+
+
+        <div class="form-row">
+
+          <div class="form-group col-lg-6 mt-3">
+            <label for="envioArquivo1">Arquivo 1</label>
+            <input type="file" class="form-control-file" id="envioArquivo1">
+          </div>
+         
+          <div class="form-group col-lg-6 mt-3">
+
+            <label for="envioArquivo2">Arquivo 2</label>
+            <input type="file" class="form-control-file" id="envioArquivo2">
+  
+          </div>
+
+          
         </div>
         
-      </div>
+          <div>
+          
+            <a href="#" data-toggle="modal" data-target="#precisoAjuda" class="text-success">Preciso de ajuda  <i class="far fa-question-circle"></i> </a>
 
-          <button type="submit" class="btn btn-success mt-5 shadow-lg mb-5 bg-white rounded btn-lg ">Enviar Proposta</button>
-      
+          </div>
+          
+          <div class="form-check mt-5 pt-5">
+            
+            <input class="form-check-input" type="checkbox" value="" id="#">
+            
+            <label class="form-check-label text-muted" for="#">
+              
+              <a href="#" data-toggle="modal" data-target="#termosUso" class="text-secondary">
+                
+              <small>Ao avançar, declaro que li e concordo com os termos de uso e privacidade.</small>
+
+              </a>
+              
+            </label>
+          </div>
+
+          <div class="d-flex justify-content-center">
+
+            <button type="submit" class="btn btn-success mt-5 shadow-lg mb-5 btn-lg ">Enviar Proposta</button>
+            
+          </div>
+
       </form>
           
     </div>
@@ -322,88 +377,297 @@
      
   <!--INÍCIO CARDS PRODUTOS-->
     
-  <div id="anchor" ></div>
+  <div id="produtos" ></div>
 
   <div class="container">
 
-      <h2 class="mb-5 mt-5 pb-3 text-success text-center"><i class="fas fa-hand-holding-usd"></i>  Produtos e Serviços</h2>
+      <h2 class="mb-5 ptExtra pb-3 text-success text-center"><i class="fas fa-hand-holding-usd"></i>  Produtos e Serviços</h2>
 
     
       <div class="row mb-5 mt-5">
-        <div class="col-md-4">          
+        <div class="col-lg-4">          
             <div class="card border-light shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="card-body">
 
                 <img class="card-img-top" src="img/sem-ilust.png" width="300" alt="Crédito para Adequação">
                    
-                <h5 class="card-title">Crédito para Adequação</h5>
+                <h5 class="card-title text-success">Crédito para Adequação</h5>
                
                 <p class="card-text">Crédito ideal para o produtor que precisa ampliar a sua estrutura e adequar a sua estrutura para uma nova demanda.</p>
-                <a href="#form" class="btn btn-success mt-4 btn-lg">Contratar</a>
+               
+                <a href="#form" class="btn btn-success shadow mt-4 btn-lg btn-block">Contratar</a>
+                
+                <a href="#" data-toggle="modal" data-target="#saberMaisAdequacao" class="btn btn-light shadow text-success mt-4 btn-lg btn-block""><i class="far fa-question-circle"></i>  Saber mais</a>
                         
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">          
+        <div class="col-lg-4">          
             <div class="card border-light shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="card-body">
 
                 <img class="card-img-top" src="img/sem-ilust.png" width="300" alt="Crédito para Adequação">
                    
-                <h5 class="card-title">Crédito para Custeio</h5>
+                <h5 class="card-title text-success">Crédito para Custeio</h5>
                
                 <p class="card-text">Crédito ideal para o produtor que precisa de ajuda para cumprir com as suas despesas regulares de toda a sua operação</p>
-                <a href="#" class="btn btn-secondary mt-4 btn-lg">Em breve</a>
+               
+                <a href="#" class="btn btn-success disabled mt-4 btn-lg btn-block">Em breve</a>
+
+                <a href="#" data-toggle="modal" data-target="#saberMaisCusteio" class="btn btn-light shadow text-success mt-4 btn-lg btn-block""><i class="far fa-question-circle"></i>  Saber mais</a>
                         
                 </div>
             </div>
         </div>
-        <div class="col-md-4">          
+        <div class="col-lg-4">          
             <div class="card border-light shadow-lg p-3 mb-4 bg-white rounded">
                 <div class="card-body">
 
                 <img class="card-img-top" src="img/sem-ilust.png" width="300" alt="Crédito para Adequação">
                    
-                <h5 class="card-title">Antecipação de Recebíveis</h5>
+                <h5 class="card-title text-success">Antecipação de Recebíveis</h5>
                
                 <p class="card-text">Antecipe o seus recebimentos e tenha mais uma alternativa para aliviar o seu capital de giro em momento de escassez</p>
-                <a href="#" class="btn btn-secondary mt-4 btn-lg">Em breve</a>
-                        
+                
+                <a href="#" class="btn btn-success disabled mt-4 btn-lg btn-block">Em breve</a>
+                
+                <a href="#" data-toggle="modal" data-target="#saberMaisAntecipacao" class="btn btn-light shadow text-success mt-4 btn-lg btn-block""><i class="far fa-question-circle"></i>  Saber mais</a>
+                
                 </div>
             </div>
         </div>
+  </div>
+      
+  <div class= "container">
+    
+    <div class="row mb-5 mb-5 pb-5">
+      
+      <div class="col-md-6">
+        
+        <h3 class="mb-5 mt-2 pt-5 text-left text-success"><i class="fa fa-info-circle"></i> Sobre a AgroForte</h3>
+        
+        <p class=" lead text-dark">
+          
+          Somos parceiros dos pequenos e médios produtores rurais. 
+          Buscamos na proximidade o caminho para entender quais são as reais
+          necessidades do campo, assim conseguiremos descomplicar a oferta de soluções e serviços financeiros para p negócio e para a família.
+          Queremos trazer a disrupção para esse ambiente.
+          
+        </p>
+        
+      </div>
+      
+      <div class="d-none d-lg-block col-md-6 mt-5 mb-4 text-right">
+        
+        <img src="img/ilust-jumbox.png" width="500" height="380" alt= "AgroForte">
+      </div>
+      
     </div>
-<div class="row mb-5">
-
-  <div class="col-md-6">
-
-    <h3 class="mb-5 mt-2 pt-5 text-left text-azulPrimary"><i class="fa fa-info-circle"></i> Sobre a AgroForte</h3>
-    
-    Somos parceiros dos pequenos e médios produtores rurais. 
-    Buscamos na proximidade o caminho para entender quais são as reais
-    necessidades do campo, assim conseguiremos descomplicar a oferta de soluções e serviços financeiros para p negócio e para a família.
-    Queremos trazer a disrupção para esse ambiente.
     
   </div>
-
-  <div class="d-none d-lg-block col-md-6 mt-5 mb-4 text-right">
-           
-    <img src="img/ilust-jumbox.png" width="500" height="200" alt= "AgroForte">
-              
-  </div>
-
-</div>
 
     <!--FIM CARDS PRODUTOS-->
 
-      <footer class="footer mt-auto py-4 text-center">
-        <div class="container">
-          <img src="img/logo-agro-ventura.png" width=100 alt= "AgroForte">
-          <span class="text-muted">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
-          <p class="mt-3 text-muted"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
+    <div class="d-flex justify-content-end">
+          
+      <a href="#topo" class="text-dark">Retornar ao topo  <i class="fas fa-long-arrow-alt-up"></i> </a>
+
+    </div>
+  
+  <footer class="footer mt-5 py-4 text-center">
+        
+    <img src="img/logo-agro-ventura.png" width=100 alt= "AgroForte">
+    <span class="text-muted">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
+    <p class="mt-3 text-muted"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
+        
+  </footer>
+      
+    <!--MODAL SABER MAIS ADEQUAÇÃO-->
+
+  <div class="modal" id="saberMaisAdequacao" tabindex="-1" role="dialog">
+    
+    <div class="modal-dialog" role="document">
+      
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Crédito para Adequação</h4>
+          
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          
         </div>
-      </footer>
+        
+        <div class="modal-body">
+
+          <img src="img/frango-galpao.png" width="460" alt= "AgroForte">
+          
+          <h5 class="modal-title mt-3 text-success">Foque em sua operação!</h5>
+
+          <p>**ESPECIFICAR PRODUTO**/p>
+        
+        </div>
+        
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-success">Contratar</button>
+          
+          <button type="button" class="btn btn-outline-success" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL SABER MAIS CUSTEIO-->
+
+  <div class="modal" id="saberMaisCusteio" tabindex="-1" role="dialog">
+    
+    <div class="modal-dialog" role="document">
+      
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          
+          <h5 class="modal-title">Crédito para Custeio</h5>
+          
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        
+        </div>
+        
+        <div class="modal-body">
+
+          <img src="img/custeio.png" width="460" alt= "AgroForte">
+
+          <h5 class="modal-title mt-3 text-success">Organize os seus pagamentos!!</h5>
+          
+          <p>**ESPECIFICAR PRODUTO**</p>
+        
+        </div>
+        
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL SABER MAIS ANTECIPAÇÃO-->
+
+  <div class="modal" id="saberMaisAntecipacao" tabindex="-1" role="dialog">
+    
+    <div class="modal-dialog" role="document">
+      
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          
+          <h5 class="modal-title">Antecipação de Recebíveis</h5>
+          
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        
+        </div>
+        
+        <div class="modal-body">
+
+          <img src="img/antecipacao.png" width="460" alt= "AgroForte">
+
+          <h5 class="modal-title mt-3 text-success">Tenha dinheiro em caixa!</h5>
+          
+          <p>**ESPECIFICAR PRODUTO**</p>
+        
+        </div>
+        
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL PRECISO DE AJUDA-->
+
+  <div class="modal" id="precisoAjuda" tabindex="-1" role="dialog">
+    
+    <div class="modal-dialog" role="document">
+      
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          
+          <h5 class="modal-title">Upload de arquivos</h5>
+          
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        
+        </div>
+        
+        <div class="modal-body">
+
+
+          <h5 class="modal-title mt-3 text-success">Agilize o processo!</h5>
+          
+          <p>**ESPAÇO RESERVADO PARA ORIENTAÇÃO DE COMO O USUÁRIO ENVIARÁ OS DOCUMENTOS**</p>
+        
+        </div>
+        
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL TERMOS E CONDIÇÕES-->
+
+  <div class="modal" id="termosUso" tabindex="-1" role="dialog">
+    
+    <div class="modal-dialog" role="document">
+      
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          
+          <h5 class="modal-title">TERMOS E CONDIÇÕES DE USO</h5>
+          
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        
+        </div>
+        
+        <div class="modal-body">
+
+
+          <h5 class="modal-title mt-3 text-success"></h5>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+          </p>
+        
+        </div>
+        
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
@@ -412,6 +676,7 @@
     
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
     
     <script>
       $(function() {
