@@ -2,11 +2,11 @@
   "name": "landing-agroforte",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Rodrigo Prudente",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.2",
