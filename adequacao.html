@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <title>AgroForte</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <link rel="stylesheet" href="custom.css">
+    
+    <!--calendar-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css"> 
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    </head>
+ 
+    <body>
+
+    <div>
+
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-success">
+            
+            <a class="navbar-brand ml-5" href="index.html">
+                <img src="img/Logo.png" width="120" alt= "AgroForte">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars04" aria-controls="navbars04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbars04">
+                
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-3 text-light active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-3 text-light" href="#produtos"><i class="fas fa-hand-holding-usd"></i> Produtos</a>
+                    </li>
+                    
+                    <li class="nav-item"></li>
+                    <a class="nav-link mr-5 text-light mr-5" href="contato.html"><i class="far fa-envelope"></i> Contato</a>
+                </li>
+                
+            </ul>
+        
+        </nav>
+            
+    </div>
+    
+      
+  <!--FIM DA NAVBAR-->
+
+<div class="jumbotron bg-white">
+    
+    <div class="container"> 
+      
+        <div class="row">
+        
+            <div class="col-lg-6">
+
+                <h1 class="textPrimary">Crédito para adequação</h1>
+                
+                <form class="mt-4">
+                    
+                    <label class="lead textoRange text-success mb-4">Qual a destinação do recurso?</label>
+                    <select class="form-control form-control-lg">
+                        <option selected>Selecione</option>
+                        <option value="1">Energia Renovável</option>
+                        <option value="2">Adequação</option>
+                        <option value="3">Bem-estar animal</option>
+                        <option value="4">Outra</option>  
+                    </select>
+
+                    <label class="lead textoRange text-success">Qual o valor gostaria de contratar?</label>
+      
+                    <p class="valorRange"><small style="font-size: 20px;" class="text-success">R$</small> <span id="valor"></span>.000</p>
+                        <input type="range" min="10" max="100" step="5" value="20" class="slider" id="valorSimulacao">
+                    
+                    <label class="lead textoRange text-success">Em quantas parcelas?</label>      
+      
+                    <p class="valorRange"><small style="font-size: 20px;" class="text-success">X</small> <span id="valorParcelas"></span></p>
+                        <input type="range" min="0" max="48" step="12" value="12" class="slider" id="qtdParcelas">
+
+                    <div class="d-flex justify-content-center mt-5">
+                        
+                        <a href="endereco.html" class="btn btn-success mt-4 shadow btn-block mb-5 btn-lg" role="button">Continuar  <i class="fas fa-angle-double-right"></i></a>
+                    
+                    </div>
+                            
+                </form>
+
+            </div>
+
+            <div class=" imgHeader d-none d-lg-block col-lg-6 mt-5 text-right">
+            
+                <img src="img/ilust-jumbox.png" width="500" height="800" alt= "AgroForte">
+                        
+            </div>
+     
+        </div>  
+    
+    </div>
+  
+</div>
+    
+    
+
+    <div class="bg-success">
+
+       
+        <footer class="mt-5 mx-auto px-5 py-5 text-center">
+            
+          <span class="text-white">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
+          <p class=" text-white"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
+          
+        </footer>
+    
+      </div>
+        
+<script>
+    
+    let slider = document.getElementById("valorSimulacao");
+    let output = document.getElementById("valor");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+    
+    let slider1 = document.getElementById("qtdParcelas");
+    let output1 = document.getElementById("valorParcelas");
+    output1.innerHTML = slider1.value;
+    
+    slider1.oninput = function() {
+        output1.innerHTML = this.value;
+    }
+
+    $(function() {
+          $( "#calendarioAdequacao" ).datepicker();
+      });
+
+
+</script>
+
+      
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    
+    <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
+    
+
+  </body>
+
+</html>

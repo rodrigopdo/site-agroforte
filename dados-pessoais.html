@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <title>AgroForte</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <link rel="stylesheet" href="custom.css">
+    
+    <!--calendar-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css"> 
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    </head>
+ 
+    <body>
+
+    <div>
+
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            
+            <a class="navbar-brand ml-5" href="index.html">
+                <img src="img/logo-agro-ventura.png" width="120" alt= "AgroForte">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars04" aria-controls="navbars04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbars04">
+                
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-3 text-success active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-3 text-success" href="#produtos"><i class="fas fa-hand-holding-usd"></i> Produtos</a>
+                    </li>
+                    
+                    <li class="nav-item"></li>
+                    <a class="nav-link mr-5 text-success mr-5" href="contato.html"><i class="far fa-envelope"></i> Contato</a>
+                </li>
+                
+            </ul>
+        
+        </nav>
+            
+    </div>
+    
+      
+<!--FIM DA NAVBAR-->
+
+  <div id="form"></div>
+
+  <div class="bg-success text-light ">
+
+    <div class="container">
+
+    
+    <h3 class="mb-4 ptExtra  text-center">Podemos conhecer você um pouco melhor?
+      </h3>
+
+<!--BARRA PROGRESSO-->
+
+      <div class="mt-5">
+
+        <h4 class="mb-4 mt-5"><i class="fa fa-user-circle"></i></i>  Dados Pessoais</h4>
+
+      </div>
+
+      <div class="progress mt-2">
+    
+        <div class="progress-bar greenSecondaryBg" role="progressbar" style="width: 50%;">50%</div>
+      
+    </div>
+
+    <p class="mt-2 mb-5 text-light">Etapa 2 / 4</p>
+
+    <p class="text-right text-light">*Campo Obrigatório </p>
+                                            
+        
+        <div class="form-row">
+          
+          <div class="form-group col-md-4"> 
+            <label class="control-label" for="inputCidade">Nacionalidade*</label>
+            <input type="text" name="nacionalidade" class="form-control" placeholder="">
+          </div>
+
+          <div class="form-group col-md-5"> <!--banco dados cidades Brasil-->
+            <label class="control-label" for="estado">Local de Nascimento*</label>
+            <input type="text" name="estado" class="form-control" placeholder=""> 
+          </div>
+
+          <div class="form-group col-md-3">
+            
+            <label  for="inputGenero">Gênero</label>
+            <select class="custom-select mr-sm-2" id="inputGenero">
+              <option selected>Selecione...</option>
+              <option value="1">Feminino</option>
+              <option value="2">Masculino</option>
+              <option value="3">Prefiro não informar</option>
+            </select>
+            
+          </div>
+       
+        </div>
+
+        <div class="form-row">
+          
+          <div class="form-group col-md-6"> 
+            <label class="control-label" for="inputCidade">Nome da mãe*</label>
+            <input type="email" name="nomeMae"class="form-control" id="nomeMae" placeholder="">
+          </div>
+
+          <div class="form-group col-md-6">
+           
+            <label  for="inputValor">Estado civil*</label>
+            <select class="custom-select mr-sm-2" id="inputValor">
+              <option selected>Selecione uma opção</option>
+              <option value="1">Solteiro(a)</option>
+              <option value="2">Casado(a)</option>
+              <option value="3">Divorciado(a)</option>
+              <option value="3">Amasiado(a)</option>
+              <option value="4">Viúvo(a)</option>  
+            </select>
+
+          </div>
+         
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-7">
+            <label class="control-label" for="inputNumero">Número de identidade (RG)*</label>
+            <input type="text" name="numero"class="form-control" id="inputCep" placeholder="">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label class="control-label" for="inpuComplemento">UF*</label>
+            <input type="text" name="complemento" class="form-control" placeholder=""> 
+          </div>
+
+          <div class="form-group col-md-3">
+            <label class="control-label" for="orgaoExpeditor">Orgão Expeditor*</label>
+            <input type="text" name="orgaoExpeditor" class="form-control" placeholder=""> 
+          </div>
+        
+        </div>
+
+
+
+        <div class="d-flex justify-content-center pb-5">
+
+          <a href="dados-bancarios.html" class="btn btn-outline-light btnOutline mt-4 shadow btn-block mb-5 btn-lg" role="button">Continuar  <i class="fas fa-angle-double-right"></i></a>
+          
+        </div>
+
+      </form>
+          
+      <footer class=" mx-auto px-5 py-5 text-center ">
+          
+        <span class="text-light">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
+        <p class=" text-light"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
+        
+      </footer>
+
+    </div>  
+
+  </div>  
+
+    
+
+   
+        
+
+      
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    
+    <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
+    
+
+  </body>
+
+</html>

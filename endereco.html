@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <title>AgroForte</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <link rel="stylesheet" href="custom.css">
+    
+    <!--calendar-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css"> 
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    </head>
+ 
+    <body>
+
+    <div>
+
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-success">
+            
+            <a class="navbar-brand ml-5" href="index.html">
+                <img src="img/Logo.png" width="120" alt= "AgroForte">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars04" aria-controls="navbars04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbars04">
+                
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-3 text-light active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-3 text-light" href="#produtos"><i class="fas fa-hand-holding-usd"></i> Produtos</a>
+                    </li>
+                    
+                    <li class="nav-item"></li>
+                    <a class="nav-link mr-5 text-light mr-5" href="contato.html"><i class="far fa-envelope"></i> Contato</a>
+                </li>
+                
+            </ul>
+        
+        </nav>
+            
+    </div>
+    
+      
+<!--FIM DA NAVBAR-->
+
+<div id="form"></div>
+
+<div class="azulPrimary text-light fluidHeight ">
+
+  <div class="container">
+
+
+    <h3 class="mb-4 ptExtra text-success text-center">Gostaríamos de saber onde você mora...
+      </h3>
+
+      <p class="mb-3 text-center">Informando-nos mais sobre você, conseguiremos ver a melhor forma de te ajudar</p>
+      
+
+<!--BARRA PROGRESSO-->
+      
+    <div class="mt-5">
+
+      <h4 class="mb-4 mt-3 text-success"><i class="fa fa-home"></i></i> Endereço Residencial</h4>
+      
+    </div>
+
+    <div class="progress mt-2">
+  
+      <div class="progress-bar bg-success" role="progressbar" style="width: 25%">25%</div>
+     
+    </div>
+    
+    <p class="mt-2 mb-5 text-light">Etapa 1 / 4</p>
+    
+      <p class="text-right text-success">*Campo Obrigatório </p>
+      
+    <div class="form-row">
+          
+      <div class="form-group col-md-3"> 
+        <label class="control-label" for="inputCep">CEP*</label>
+        <input type="text" class="form-control" id="inputCep" placeholder="00000-000">
+        <small class="form-text text-light"<a href="#">Consultar CEP</a></small>
+      </div>
+
+      <div class="form-group col-md-9">
+        <label class="control-label" for="inputEndereco">Endereço*</label>
+        <input type="text" name="endereco" class="form-control" placeholder="Rua/Avenida/Alameda"> 
+      </div>
+          
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-2">
+        <label class="control-label" for="inputNumero">Número*</label>
+        <input type="text" name="numero"class="form-control" id="inputCep" placeholder="">
+      </div>
+
+      <div class="form-group col-md-5">
+        <label class="control-label" for="inpuComplemento">Complemento*</label>
+        <input type="text" name="complemento" class="form-control" placeholder="Casa/Bloco/Quadra"> 
+      </div>
+
+      <div class="form-group col-md-5">
+        <label class="control-label" for="inputBairro">Bairro*</label>
+        <input type="text" name="bairro" class="form-control" placeholder="Vila/Jardim/Parque"> 
+      </div>
+    
+    </div>
+        
+    <div class="form-row">
+      
+      <div class="form-group col-md-5"> 
+        <label class="control-label" for="inputCidade">Cidade*</label>
+        <input type="text" name="cidade"class="form-control" id="inputCep" placeholder="">
+      </div>
+
+      <div class="form-group col-md-2">
+        <label class="control-label" for="inputComplemento">Estado*</label>
+        <input type="text" name="complemento" class="form-control" placeholder=""> 
+      </div>
+
+      <div class="form-group col-md-5">
+        <label class="control-label" for="input">Ponto de Referência</label>
+        <input type="text" name="referencia" class="form-control" placeholder="Próximo a..."> 
+      </div>
+    
+    </div>
+
+  </div>
+
+    <div class=" container d-flex justify-content-center pb-5">
+
+      <a href="dados-pessoais.html" class="btn btn-success mt-4 shadow btn-block mb-5 btn-lg" role="button">Continuar  <i class="fas fa-angle-double-right"></i></a>
+      
+    </div>
+
+    <div>
+      
+      <footer class=" px-3 py-5 text-center">
+        
+        
+        <span class="text-white">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
+        <p class=" text-white"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
+        
+      </footer>
+      
+    </div>
+  </div>
+
+</div>
+     
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    
+    <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
+    
+
+  </body>
+
+</html>
