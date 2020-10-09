@@ -109,6 +109,14 @@ h1 {
   color: #2F384B;
 }
 
+@media (max-width: 576px) {
+
+  .btnSm {
+  width: 100%;
+  }
+    
+}
+
 @media (min-width: 576px) { 
         
   h1 {
@@ -140,17 +148,9 @@ font-size: 70px;
 }
 
 }
-fdbd
-@media (max-width: 576px) {
 
-.btnSm {
-width: 100%;
-}
-  
-}
 
 /*SLIDE RANGE*/
-
 
 .slider {
   -webkit-appearance: none;

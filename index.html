@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     
     <title>AgroForte</title>
+
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
     <link rel="stylesheet" href="custom.css">
+
+    <link rel="styleSheet” hef="custom.css" media="screen and (color)”>
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css"> <!--calendar-->
     
@@ -22,7 +25,7 @@
   
   <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-success">
   
-    <a class="navbar-brand ml-5" href="index.html">
+    <a class="navbar-brand ml-3" href="index.html">
     <img src="img/Logo.png" width="120" alt= "AgroForte">
     </a>
 
@@ -39,7 +42,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link mr-3 text-light" href="#produtos"><i class="fas fa-hand-holding-usd"></i> Produtos</a>
+          <a class="nav-link mr-2 text-light" href="#produtos"><i class="fas fa-hand-holding-usd"></i> Produtos</a>
         </li>
                     
         <li class="nav-item"></li>
@@ -64,7 +67,7 @@
         
         <div class="col-lg-6">
 
-          <h1 class="text-success">O parceiro digital do produtor rural</h1>
+          <h1 class="text-dark">O parceiro digital do produtor rural</h1>
           
           <p class="mt-4 mb-5 greenSecondary">Aqui você encontra a solução de crédito perfeita para o seu negócio. Somos um serviço 100% digital que chegou ao campo para ajudar o produtor rural, sem burocracias.
           </p>
@@ -91,11 +94,11 @@
 
   <!--INÍCIO CARDS PRODUTOS-->
     
-<div id="produtos">
+<div class="bg-success" id="produtos">
    
   <div class="container">
 
-    <h2 class="mb-5 ptExtra pb-3 text-success text-center"><i class="fas fa-hand-holding-usd"></i>  Produtos e Serviços</h2>
+    <h2 class="mb-5 display-5 mt-4 py-5 text-light text-center">Produtos e Serviços</h2>
 
     <div class="row mb-5 mt-5">
       
@@ -131,7 +134,7 @@
                 
             <h5 class="card-title text-success">Crédito para Custeio</h5>
             
-            <p class="card-text">Crédito ideal para o produtor que precisa de ajuda para cumprir com as suas despesas regulares e manter a boa saúde de seu fluxo de caixa.</p>
+            <p class="card-text">Crédito ideal para o produtor que precisa de ajuda para cumprir com as suas despesas regulares e manter a saúde do seu caixa.</p>
             
             <a href="#" class="btn btn-success disabled mt-4 btn-lg btn-block">Em breve</a>
 
@@ -145,7 +148,7 @@
       
       <div class="col-lg-4">          
          
-        <div class="card border-light shadow-lg p-3 mb-4 bg-white rounded">
+        <div class="card border-light shadow-lg p-3 mb-5 bg-white rounded">
           
           <div class="card-body">
 
@@ -179,25 +182,25 @@
   
   <div class="container">
     
-    <div class="row mb-5 mb-5 pb-5">
+    <div class="row mb-5 mb-5 pb-5 mx-2">
       
       <div class="col-md-6">
         
-        <h2 class="mb-5 mt-2 pt-5 text-left text-success"> Sobre a AgroForte</h2>
+        <h2 class="mb-5 mt-2 pt-3 text-left text-weight-bold text-success"> Sobre a AgroForte</h2>
         
-        <p class=" lead text-dark text-justify">
+        <p class=" lead text-dark"><b>
           
           Somos parceiros dos pequenos e médios produtores rurais. 
           Buscamos na proximidade o caminho para entender quais são as reais
           necessidades do campo, assim conseguiremos descomplicar a oferta de soluções e serviços financeiros para o negócio e para a família.
            
-        </p>
+        </b></p>
         
       </div>
       
       <div class="d-none d-md-block col-md-6 mt-5 mb-4 text-right">
         
-      <img src="img/ilust-jumbox.png" width="500" height="360" alt= "AgroForte">
+      <img src="img/ilust-jumbox.png" width="300" height="360" alt= "AgroForte">
       
     </div>  
 
@@ -206,329 +209,11 @@
 </div>
 
 <!--FIM SOBRE AGROFORTE-->
-
-<!--INÍCIO CADASTRO-->
-  
-<div id="form"></div>
-
-  <div class="azulPrimary text-light">
-
-    <div class="container">
-  
-      <h3 class="mb-4 ptExtra text-success text-center"><i class="far fa-handshake"></i> Seja um Parceiro AgroForte!</h3>
-
-      <p class="mb-3 text-center">Envie-nos a sua proposta. Precisaremos apenas dos seus dados e o envio de alguns documentos</p>
-                                            
-  
-      <div class="row mt-5">
-        
-        <h4 class="col-md-8 text-success"><i class="fa fa-info-circle"></i> Dados Básicos</h4>
-        <p class="col-md-4 text-right text-muted">*Campo Obrigatório </p>
-             
-      </div>      
-          
-      <form>
-        
-        <div class="form-row"> 
-          
-          <div class="form-group col-md-6">
-            <label class="control-label" for="inputNome">Nome*</label>
-            <input id="nome" name="nome" placeholder="Seu nome"  class="form-control input-md" required="" type="text">
-          </div>
-          
-          <div class="form-group col-md-6">
-            <label class="control-label" for="inputSobrenome">Sobrenome*</label>
-            <input id="sobrenome" name="sobrenome" placeholder="Seu sobrenome"  class="form-control input-md" required="" type="text">
-          </div>
-
-        </div>
-
-        <div class="form-row">
-          
-          <div class="form-group col-md-6">
-            <label class="control-label" for="inputCpf">CPF*</label>
-            <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$"> 
-          </div>  
-          
-          <div class="form-group col-md-6">
-            <label class="control-label" for="inputEmail">E-mail*</label>
-            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="email@seuemail">
-          </div>
-        
-        </div>
-
-        <h4 class="mb-4 mt-5 text-success"><i class="fa fa-home"></i></i> Endereço Residencial</h4>
-
-        <div class="form-row">
-          
-          <div class="form-group col-md-3"> 
-            <label class="control-label" for="inputCep">CEP*</label>
-            <input type="text" class="form-control" id="inputCep" placeholder="email@seuemail">
-            <small class="form-text text-light"<a href="#">Consultar CEP</a></small>
-          </div>
-
-          <div class="form-group col-md-9">
-            <label class="control-label" for="inputEndereco">Endereço*</label>
-            <input type="text" name="endereco" class="form-control" placeholder="Rua/Avenida/Alameda"> 
-          </div>
-          
-        </div>
-
-        <div class="form-row">
-
-          <div class="form-group col-md-2">
-            <label class="control-label" for="inputNumero">Número*</label>
-            <input type="text" name="numero"class="form-control" id="inputCep" placeholder="">
-          </div>
-
-          <div class="form-group col-md-5">
-            <label class="control-label" for="inpuComplemento">Complemento*</label>
-            <input type="text" name="complemento" class="form-control" placeholder="Casa/Bloco/Quadra"> 
-          </div>
-
-          <div class="form-group col-md-5">
-            <label class="control-label" for="inputBairro">Bairro*</label>
-            <input type="text" name="bairro" class="form-control" placeholder="Vila/Jardim/Parque"> 
-          </div>
-        
-        </div>
-        
-        <div class="form-row">
-          
-          <div class="form-group col-md-5"> 
-            <label class="control-label" for="inputCidade">Cidade*</label>
-            <input type="text" name="cidade"class="form-control" id="inputCep" placeholder="">
-          </div>
-
-          <div class="form-group col-md-2">
-            <label class="control-label" for="inputComplemento">Estado*</label>
-            <input type="text" name="complemento" class="form-control" placeholder=""> 
-          </div>
-
-          <div class="form-group col-md-5">
-            <label class="control-label" for="input">Ponto de Referência</label>
-            <input type="text" name="referencia" class="form-control" placeholder="Próximo a..."> 
-          </div>
-       
-        </div>
-
-        <h4 class="mb-4 mt-5 text-success"><i class="fa fa-user-circle"></i></i>  Dados Pessoais</h4>
-
-        <div class="form-row">
-          
-          <div class="form-group col-md-4"> 
-            <label class="control-label" for="inputCidade">Nacionalidade*</label>
-            <input type="text" name="nacionalidade" class="form-control" placeholder="">
-          </div>
-
-          <div class="form-group col-md-6"> <!--banco dados cidades Brasil-->
-            <label class="control-label" for="estado">Local de Nascimento*</label>
-            <input type="text" name="estado" class="form-control" placeholder=""> 
-          </div>
-
-          <div class="form-group col-md-2">
-            
-            <label  for="inputGenero">Gênero</label>
-            <select class="custom-select mr-sm-2" id="inputGenero">
-              <option selected>Selecione uma opção</option>
-              <option value="1">Feminino</option>
-              <option value="2">Masculino</option>
-              <option value="3">Prefiro não informar</option>
-            </select>
-            
-          </div>
-       
-        </div>
-
-        <div class="form-row">
-          
-          <div class="form-group col-md-6"> 
-            <label class="control-label" for="inputCidade">Nome da mãe*</label>
-            <input type="email" name="nomeMae"class="form-control" id="nomeMae" placeholder="">
-          </div>
-
-          <div class="form-group col-md-6">
-           
-            <label  for="inputValor">Estado civil*</label>
-            <select class="custom-select mr-sm-2" id="inputValor">
-              <option selected>Selecione uma opção</option>
-              <option value="1">Solteiro(a)</option>
-              <option value="2">Casado(a)</option>
-              <option value="3">Divorciado(a)</option>
-              <option value="3">Amasiado(a)</option>
-              <option value="4">Viúvo(a)</option>  
-            </select>
-
-          </div>
-         
-        </div>
-
-        <div class="form-row">
-
-          <div class="form-group col-md-7">
-            <label class="control-label" for="inputNumero">Número de identidade (RG)*</label>
-            <input type="text" name="numero"class="form-control" id="inputCep" placeholder="">
-          </div>
-
-          <div class="form-group col-md-2">
-            <label class="control-label" for="inpuComplemento">UF*</label>
-            <input type="text" name="complemento" class="form-control" placeholder=""> 
-          </div>
-
-          <div class="form-group col-md-3">
-            <label class="control-label" for="orgaoExpeditor">Orgão Expeditor*</label>
-            <input type="text" name="orgaoExpeditor" class="form-control" placeholder=""> 
-          </div>
-        
-        </div>
-
-        <h4 class="mb-4 mt-5 text-success"><i class="fa fa-university"></i>  Dados Bancários</h4>
-
-
-        <div class="form-row">
-
-          <div class="form-group col-md-6">
-            <label class="control-label" for="inputNumero">Instituição*</label>
-            <input type="text" name="numero"class="form-control" id="inputCep" placeholder="Nome do Banco">
-          </div>
-
-          <div class="form-group col-md-2">
-            <label class="control-label" for="inpuComplemento">Agência*</label>
-            <input type="text" name="complemento" class="form-control" placeholder=""> 
-          </div>
-
-          <div class="form-group col-md-4">
-            <label class="control-label" for="orgaoExpeditor">Conta*</label>
-            <input type="text" name="orgaoExpeditor" class="form-control" placeholder="Somente números"> 
-          </div>
-        
-        </div>
-
-        <h4 class="mb-4 mt-5 text-success"><i data-feather="dollar-sign"></i> <i class="fas fa-hand-holding-usd"></i>  Simulação</h4>
-      
-        <div class="form-row">
-
-          <div class="form-group col-md-3">
-          
-            <label  for="inputValor">Destinação</label>
-            <select class="custom-select mr-sm-2" id="inputValor">
-              <option selected>Selecione</option>
-              <option value="1">Energia Renovável</option>
-              <option value="2">Adequação</option>
-              <option value="3">Bem-estar animal</option>
-              <option value="4">Outra</option>  
-            </select>
-          
-          </div>
-          
-          <div class="form-group col-md-3">
-          
-              <label  for="inputValor">Valor Solicitado</label>
-              <select class="custom-select mr-sm-2" id="inputValor">
-                <option selected>Valor R$</option>
-                <option value="1">R$ 20.000</option>
-                <option value="2">R$ 50.000</option>
-                <option value="3">R$ 80.000</option>
-                <option value="4">R$ 100.000</option>
-                <option value="5">R$ 200.000</option>
-                <option value="6">R$ 300.000</option>
-              </select>
-
-          </div>
-
-          <div class="form-group col-md-3">
-          
-              <label  for="inputParcelas">Qtde. de Parcelas</label>
-              <select class="custom-select mr-sm-2" id="inputParcelas">
-                <option selected>Quantidade</option>
-                <option value="1">06</option>
-                <option value="2">12</option>
-                <option value="3">24</option>
-                <option value="4">26</option>
-                <option value="5">48</option>
-              </select>
-         
-          </div>
-
-          <div class="form-group col-md-3">
-            
-              <label  for="inputVencimento">Vencimento</label>
-              <input class="form-control" type="text" id="calendario">
-
-          </div>
-          
-        </div>
-
-        <h4 class="mb-4 mt-5 text-success"><i class="fas fa-file-upload"></i>  Envio de Documentos</h4>
-        
-        <p>Para agilizarmos o processo de contratação, abaixo você poderá carregar e enviar os arquivos com as imagens digitalizadas dos seguintes documentos:</p>
-        
-        <p class="mt-4"><small><i class="fas fa-check"></i> Documento de identidade (RG) ou CNH dentro do prazo de validade </small></p>
-        
-        <p class="mb-5"><small><i class="fas fa-check"></i> Comprovante de residência recente (últimos 3 meses)</small></p>
-
-
-        <div class="form-row">
-
-          <div class="form-group col-lg-6 mt-3">
-            <label for="envioArquivo1">Arquivo 1</label>
-            <input type="file" class="form-control-file" id="envioArquivo1">
-          </div>
-         
-          <div class="form-group col-lg-6 mt-3">
-            <label for="envioArquivo2">Arquivo 2</label>
-            <input type="file" class="form-control-file" id="envioArquivo2">
-          </div>
-    
-        </div>
-        
-        <div>
-          
-            <a href="#" data-toggle="modal" data-target="#precisoAjuda" class="text-success">Preciso de ajuda  <i class="far fa-question-circle"></i> </a>
-
-        </div>
-          
-          <div class="form-check mt-5 pt-5">
-            
-            <input class="form-check-input" type="checkbox" value="" id="#">
-            
-            <label class="form-check-label text-muted" for="#">
-              
-              <a href="#" data-toggle="modal" data-target="#termosUso" class="text-secondary">
-                
-              <small>Ao avançar, declaro que li e concordo com os termos de uso e privacidade.</small>
-
-              </a>
-              
-            </label>
-          </div>
-
-        <div class="d-flex justify-content-center">
-
-          <button type="submit" class="btn btn-success mt-5 shadow btnSm btnEnviar mb-5 btn-lg ">Enviar Proposta</button>
-          
-        </div>
-
-      </form>
-          
-    </div>
-
-  </div>
-
-  <!--FIM DO FORMULÁRIO-->
-  
-  <div class="bg-success">
-
-    <div class="container text-right pt-4 ">
-          
-      <a href="#topo" class="text-white">Retornar ao topo  <i class="fas fa-long-arrow-alt-up"></i> </a>
-
-    </div>
   
     <footer class="mt-5 mx-auto px-5 py-5 text-center">
         
-      <span class="text-white">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
-      <p class=" text-white"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
+      <span class="text-success">&copy;2020 AgroForte | Todos os direitos reservados</span><br>
+      <p class=" text-success"><i class="fas fa-thumbtack"></i> Rua Álvaro Anes, 56, Pinheiros. Cep 05421-010 - São Paulo - SP</p>
       
     </footer>
 
@@ -738,7 +423,9 @@
         
         <div class="modal-header">
           
-          <h5 class="text-center ml-auto mt-2"><img src="img/logo-agro-ventura.png"></h5>
+          <h3 class="mb-2 mt-3 text-dark text-center font-weight-bold">Vamos simular uma contratação?</h3>
+
+          <br>
           
           <button type="button" class="close" data-dismiss="modal">
             <span aria-hidden="true">&times;</span>
@@ -748,7 +435,6 @@
         
         <div class="modal-body">
 
-          <h3 class="mb-5 mx-5  text-dark text-center font-weight-bold">Faça uma simulação sem compromisso</h3>
           
           <form>
             <div class="form-group mx-3">
@@ -785,7 +471,7 @@
 
             <div class="d-flex justify-content-center">
 
-              <a href="adequacao.html" type="submit" class=" btn-lg btn btn-success mt-5">Simular contratação</a>
+              <a href="adequacao.html" type="submit" class=" btn-lg btn btn-success mt-3">Simular contratação</a>
             
             </div>
           
